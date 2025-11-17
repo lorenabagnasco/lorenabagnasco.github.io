@@ -1,0 +1,112 @@
+<!--
+Portfolio simple y profesional para GitHub Pages
+Usuario de GitHub: lorenabagnasco
+Instrucciones de publicación abajo.
+-->
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Lorena Bagnasco — Desarrolladora PHP</title>
+  <meta name="description" content="Portfolio de Lorena Bagnasco — Desarrolladora de software (PHP).">
+  <style>
+    :root{--bg:#ffffff;--text:#0f1720;--muted:#586070;--accent:#0b78d1;--card:#f7fafc}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:var(--bg); color:var(--text); line-height:1.5}
+    .container{max-width:960px;margin:40px auto;padding:24px}
+    header{display:flex;align-items:center;gap:18px}
+    .avatar{width:84px;height:84px;border-radius:12px;background:linear-gradient(135deg,var(--card),#fff);display:flex;align-items:center;justify-content:center;font-weight:600;color:var(--muted);font-size:26px}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    .cta{margin-top:18px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:8px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
+    main{margin-top:28px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:24px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(10,20,40,0.04)}
+    .projects{display:grid;gap:14px}
+    .project{padding:14px;border-radius:10px;background:white;border:1px solid #eef3f7}
+    .project h3{margin:0 0 6px;font-size:16px}
+    .tags{font-size:13px;color:var(--muted)}
+    .muted{color:var(--muted);font-size:14px}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:14px}
+    @media (max-width:880px){.grid{grid-template-columns:1fr} .avatar{width:64px;height:64px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">LB</div>
+      <div>
+        <h1>Lorena Bagnasco</h1>
+        <p class="lead">Desarrolladora de software — PHP / Backend. Abierta a aprender nuevas tecnologías. Disponible full time, trabajo remoto.</p>
+        <div class="cta">
+          <a class="btn" href="mailto:tu-email@example.com">Contactame</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section>
+        <div class="card">
+          <h2>Sobre mí</h2>
+          <p class="muted">Soy analista de software con experiencia en desarrollo en PHP. Me especializo en crear soluciones web mantenibles y fáciles de escalar. Me adapto rápido a nuevas tecnologías y trabajo bien en equipos remotos en inglés.</p>
+          <hr style="margin:14px 0">
+          <h3>Habilidades principales</h3>
+          <p class="tags">PHP · MySQL · Laravel · HTML · CSS · JavaScript · REST APIs · Git · Docker básico</p>
+        </div>
+
+        <div style="height:16px"></div>
+
+        <div class="card">
+          <h2>Proyectos destacados</h2>
+          <div class="projects">
+            <article class="project">
+              <h3>Task Manager (PHP + MySQL)</h3>
+              <p class="muted">CRUD de tareas con roles (admin/usuario), autenticación y búsqueda. Deploy local y documentación en README.</p>
+              <p class="tags">PHP · MySQL · Bootstrap · Git</p>
+              <p style="margin-top:8px"><a href="https://github.com/lorenabagnasco/task-manager" target="_blank">Ver repo</a></p>
+            </article>
+
+            <article class="project">
+              <h3>API REST de Productos</h3>
+              <p class="muted">API REST que expone endpoints para productos: listar, filtrar, crear y eliminar. Tests básicos incluidos.</p>
+              <p class="tags">PHP · Slim Framework · JSON · PHPUnit</p>
+              <p style="margin-top:8px"><a href="https://github.com/lorenabagnasco/products-api" target="_blank">Ver repo</a></p>
+            </article>
+
+            <article class="project">
+              <h3>Landing / Portfolio</h3>
+              <p class="muted">Sitio estático responsive con muestra de proyectos y contacto.</p>
+              <p class="tags">HTML · CSS · GitHub Pages</p>
+              <p style="margin-top:8px"><a href="https://lorenabagnasco.github.io" target="_blank">Ver sitio</a></p>
+            </article>
+          </div>
+        </div>
+
+      </section>
+
+      <aside>
+        <div class="card">
+          <h3>Contacto</h3>
+          <p class="muted">Email: <a href="mailto:tu-email@example.com">tu-email@example.com</a></p>
+          <p class="muted">LinkedIn: <a href="https://www.linkedin.com/in/lorenabagnasco" target="_blank">linkedin.com/in/lorenabagnasco</a></p>
+          <p class="muted">GitHub: <a href="https://github.com/lorenabagnasco" target="_blank">github.com/lorenabagnasco</a></p>
+        </div>
+
+        <div style="height:16px"></div>
+
+        <div class="card">
+          <h3>Disponibilidad</h3>
+          <p class="muted">Full time — Remoto — Inglés para entrevistas y daily standups</p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <p>© "Lorena Bagnasco" — Desarrolladora PHP</p>
+    </footer>
+  </div>
+</body>
+</html>
