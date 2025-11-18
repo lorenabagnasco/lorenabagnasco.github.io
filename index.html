@@ -50,63 +50,79 @@ Usuario de GitHub: lorenabagnasco
       <section>
         <div class="card">
           <h2>Sobre mí</h2>
-          <p class="muted">Profesional en desarrollo de software con experiencia en análisis, mantenimiento y mejora de sistemas empresariales. He trabajado en migraciones tecnológicas, creación de reportes estadísticos, automatización de procesos, integración de datos de RRHH y en la coordinación de proyectos. Me destaco por la capacidad de adaptación, resolución de problemas y liderazgo técnico</p>
+          <p class="muted">
+            Profesional en desarrollo de software con experiencia en análisis, mantenimiento y mejora de sistemas empresariales. He trabajado en migraciones tecnológicas, creación de reportes estadísticos, automatización de procesos, integración de datos de RRHH y coordinación de proyectos. Me destaco por mi capacidad de adaptación, resolución de problemas y liderazgo técnico.
+          </p>
+
           <hr style="margin:14px 0">
+
           <h3>Habilidades principales</h3>
-          <p class="tags">PHP · MySQL ·  HTML · CSS · JavaScript · REST APIs · Git ·</p>
+          <p class="tags">PHP · MySQL · HTML · CSS · JavaScript · REST APIs · Git ·</p>
         </div>
 
         <div style="height:16px"></div>
 
         <div class="card">
           <h2>Proyectos destacados</h2>
+
           <div class="projects">
-            <article class="project">
-              <h3>Control Camaras CCTV (PHP + MySQL)</h3>
-              <p class="muted">sistema de monitoreo para más de 700 cámaras de CCTV que permite detectar de forma rápida y visual posibles fallas en la grabación.
-La aplicación identifica si una cámara presenta retenciones faltantes, momentos sin grabación o si la cámara está caída, mostrando esta información en un calendario por cámara, donde se destacan todos los días con problemas.
 
-Además, cada día sin grabación puede ser descrito por el técnico, agregando el motivo correspondiente (fallo, mantenimiento, corte de energía, etc.). Esto permite llevar un control diario, ordenado y auditable del estado de todas las cámaras, facilitando el mantenimiento preventivo y reduciendo el tiempo de respuesta ante fallas.</p>
-              <p class="tags">PHP · MySQL · PCInfo · Git · Json</p>
-              <p style="margin-top:8px"><a href="https://github.com/lorenabagnasco/sistema_de_cctv" target="_blank">Ver repo</a></p>
+            <!-- PROYECTO CCTV -->
+            <article class="project">
+              <h3>Sistema de Control y Monitoreo de Cámaras CCTV</h3>
+              <p class="muted">
+                Sistema de monitoreo para más de 700 cámaras de CCTV que permite detectar de manera rápida y visual posibles fallas en la grabación.  
+                Identifica retenciones faltantes, momentos sin grabación o cámaras caídas, y presenta esta información en un calendario por cámara donde se destacan los días con problemas.  
+                Los técnicos pueden registrar el motivo de cada día sin grabación, lo que permite un control diario, ordenado y auditable del estado de todas las cámaras.
+              </p>
+              <p class="tags">PHP · MySQL · PCInfo · Git · JSON</p>
+              <p style="margin-top:8px"><a href="https://github.com/lorenabagnasco/sistema_de_cctv" target="_blank">Ver repositorio</a></p>
             </article>
 
+            <!-- PROYECTO SUBSIDIOS -->
             <article class="project">
-              <h3>Liquidacion de subsidios.</h3>
-              <p class="muted">sistema que automatiza la liquidación del subsidio correspondiente a las certificaciones médicas generadas en el mes para cada empleado.
-El proceso evalúa múltiples condiciones, como:<b>Cantidad de días certificados,Certificaciones continuadas (que provienen de un período previo),Internación o tratamientos especiales,Retenciones de haberes (por hijos u otros conceptos),Valor vigente de la BPC, Montos cubiertos directamente por BPS</b>
+              <h3>Sistema de Liquidación de Subsidios por Certificaciones Médicas</h3>
 
-Con esta información, el sistema calcula la liquidación complementaria que debe pagar BPS para asegurar que el empleado no sufra una pérdida económica significativa durante sus días certificados.
-El resultado es un proceso más preciso, ágil y transparente, que reduce errores manuales y garantiza el cumplimiento de la normativa vigente.</p>
-              <p class="tags">Antes del sistema, los cálculos se realizaban en un programa ejecutable, pero las certificaciones se creaban en papel, lo que generaba errores, demoras y diferencias en los montos liquidados. El sistema estandariza el proceso, reduce errores y agiliza el trabajo del equipo administrativo. </p>
-             <p><b>Funcionamiento</b>
+              <p class="muted">
+                Aplicación que automatiza la liquidación del subsidio correspondiente a certificaciones médicas generadas en el mes para cada empleado.  
+                El sistema evalúa múltiples condiciones como:  
+                <b>cantidad de días certificados, certificaciones continuadas, internación, retenciones de haberes, valor BPC y montos cubiertos por BPS.</b>  
+              </p>
 
-El sistema recibe todas las certificaciones del mes, teniendo en la base de datos los datos del paciente.
+              <p class="muted">
+                A partir de esta información calcula la liquidación complementaria para asegurar que el empleado no sufra una pérdida económica significativa durante sus días certificados.  
+                Esto genera un proceso más preciso, ágil y transparente, reduciendo errores manuales y garantizando cumplimiento normativo.
+              </p>
 
-Verifica si cada certificación continúa de un período anterior.
+              <p class="tags">
+                Antes del sistema, los cálculos se realizaban en un ejecutable de escritorio, mientras que las certificaciones estaban en papel, lo que generaba demoras y errores.  
+                La digitalización optimiza el flujo administrativo.
+              </p>
 
-Evalúa días certificados, internación y condiciones especiale
+              <p class="muted"><b>Funcionamiento</b></p>
+              <ul class="muted">
+                <li>Importación de certificaciones del mes.</li>
+                <li>Detección de continuidad con períodos anteriores.</li>
+                <li>Evaluación de días certificados e internación.</li>
+                <li>Cálculo del sueldo base y porcentajes según BPC.</li>
+                <li>Determinación del monto que cubre BPS.</li>
+                <li>Generación de la liquidación complementaria.</li>
+                <li>Emisión de recibos para cada empleado.</li>
+                <li>Generación de archivos bancarios para depósitos.</li>
+                <li>Resumen final para la empresa.</li>
+              </ul>
 
-Dado archivo mrnsual que se envia desde la empresa, se calcula el sueldo base teniendo en cuenta, y el porcentaje a cubrir segun BPC obtenidos entre haberese fijos, haberes variables y promedio de los ultimos 6 meses
-          
-Calcula el monto que cubre BPS según BPC vigente.
-
-Determina la liquidación complementaria correspondiente.
-               
-Genera los rescibos con el detalle para cada empleado
-
-Genera archivos con informacion bancaria y montos a depositar para adjuntar en los bancos y asi depositar los subsidios en las cuentas de cada empleadp.
-        
-Genera un resumen final para la empresa.
-              <p style="margin-top:8px"><a href="https://github.com/lorenabagnasco/liquidacion_subsidio" target="_blank">Ver repo</a></p>
+              <p style="margin-top:8px"><a href="https://github.com/lorenabagnasco/liquidacion_subsidio" target="_blank">Ver repositorio</a></p>
             </article>
 
+            <!-- PROYECTO PORTFOLIO -->
             <article class="project">
               <h3>Landing / Portfolio</h3>
               <p class="muted">Sitio estático responsive con muestra de proyectos y contacto.</p>
               <p class="tags">HTML · CSS · GitHub Pages</p>
               <p style="margin-top:8px"><a href="https://lorenabagnasco.github.io" target="_blank">Ver sitio</a></p>
             </article>
+
           </div>
         </div>
 
@@ -115,7 +131,7 @@ Genera un resumen final para la empresa.
       <aside>
         <div class="card">
           <h3>Contacto</h3>
-          <p class="muted">Email: <a href="mailto:tu-email@example.com">loreebagnasco@gmail.com</a></p>
+          <p class="muted">Email: <a href="mailto:loreebagnasco@gmail.com">loreebagnasco@gmail.com</a></p>
           <p class="muted">LinkedIn: <a href="https://www.linkedin.com/in/lorenabagnasco" target="_blank">linkedin.com/in/lorenabagnasco</a></p>
           <p class="muted">GitHub: <a href="https://github.com/lorenabagnasco" target="_blank">github.com/lorenabagnasco</a></p>
         </div>
@@ -124,13 +140,13 @@ Genera un resumen final para la empresa.
 
         <div class="card">
           <h3>Disponibilidad</h3>
-          <p class="muted">Full time — Remoto — </p>
+          <p class="muted">Full time — Remoto — Internacional</p>
         </div>
       </aside>
     </main>
 
     <footer>
-      <p>© "Lorena Bagnasco" — Desarrolladora PHP</p>
+      <p>© Lorena Bagnasco — Desarrolladora PHP</p>
     </footer>
   </div>
 </body>
