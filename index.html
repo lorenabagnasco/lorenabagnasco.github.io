@@ -78,7 +78,26 @@ El proceso evalúa múltiples condiciones, como:<b>Cantidad de días certificado
 
 Con esta información, el sistema calcula la liquidación complementaria que debe pagar BPS para asegurar que el empleado no sufra una pérdida económica significativa durante sus días certificados.
 El resultado es un proceso más preciso, ágil y transparente, que reduce errores manuales y garantiza el cumplimiento de la normativa vigente.</p>
-              <p class="tags">PHP · MySql </p>
+              <p class="tags">Antes del sistema, los cálculos se realizaban en un programa ejecutable, pero las certificaciones se creaban en papel, lo que generaba errores, demoras y diferencias en los montos liquidados. El sistema estandariza el proceso, reduce errores y agiliza el trabajo del equipo administrativo. </p>
+             <p><b>Funcionamiento</b>
+
+El sistema recibe todas las certificaciones del mes, teniendo en la base de datos los datos del paciente.
+
+Verifica si cada certificación continúa de un período anterior.
+
+Evalúa días certificados, internación y condiciones especiale
+
+Dado archivo mrnsual que se envia desde la empresa, se calcula el sueldo base teniendo en cuenta, y el porcentaje a cubrir segun BPC obtenidos entre haberese fijos, haberes variables y promedio de los ultimos 6 meses
+          
+Calcula el monto que cubre BPS según BPC vigente.
+
+Determina la liquidación complementaria correspondiente.
+               
+Genera los rescibos con el detalle para cada empleado
+
+Genera archivos con informacion bancaria y montos a depositar para adjuntar en los bancos y asi depositar los subsidios en las cuentas de cada empleadp.
+        
+Genera un resumen final para la empresa.
               <p style="margin-top:8px"><a href="https://github.com/lorenabagnasco/liquidacion_subsidio" target="_blank">Ver repo</a></p>
             </article>
 
