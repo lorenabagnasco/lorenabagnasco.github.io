@@ -36,10 +36,13 @@ Usuario de GitHub: lorenabagnasco
 <body>
   <div class="container">
     <header>
+    <div class="perfil">
       <div class="avatar">
-      <img src="Foto_Perfil.jpeg" alt="Lorena Bagnasco" />
+        <img src="Foto_Perfil.jpeg" alt="Lorena Bagnasco" />
       </div>
-      <div>
+      
+ 
+     
         <h1>Lorena Bagnasco</h1>
         <p class="lead">Desarrolladora de software — PHP / Backend. Abierta a aprender nuevas tecnologías.</p>
         <div class="cta">
@@ -153,3 +156,22 @@ Usuario de GitHub: lorenabagnasco
   </div>
 </body>
 </html>
+<style>
+.perfil {
+  display: flex;
+  align-items: center; /* centra verticalmente la imagen con el nombre */
+  gap: 10px; /* espacio entre la imagen y el nombre */
+}
+
+.avatar img {
+  width: 50px; /* ajusta según necesites */
+  height: 50px; /* para mantener proporción cuadrada */
+  border-radius: 50%; /* hace la imagen redonda */
+  object-fit: cover; /* recorta la imagen si es necesario para que no se deforme */
+}
+
+.nombre {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+</style>
